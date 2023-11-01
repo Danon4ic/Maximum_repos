@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/mini_game.css' %}">
+</head>
+<body>
+    <h1>{{  some_info  }}</h1>
+    <h2>{{  valute  }}</h2>
+    {%  for num in list  %}
+        <p>{{  num  }}</p>
+    {%  endfor  %}
+    <h1 class="login fo">Логин: </h1>
+    <button onclick="Restart()">Restart</button>
+    <h2 class="points">Очки: </h2>
+    <button class="but" onclick="Click()">ЖМЯК !</button>
+
+    <script src="{% static 'js/mini_game.js'%}"></script>
+
+</body>
+</html>
